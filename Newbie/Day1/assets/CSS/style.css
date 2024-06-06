@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspbery: hsl(332, 51%, 32%);
+
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24,5%, 18%);
+
+    --regular: 400;
+    --semi-bold: 600;
+    --bold: 700;
+}
+
+body {
+    background-color: var(--light-grey);
+}
+
+.main-container {
+    background-color: var(--white);
+    min-width: 370px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.information-container {
+    padding: 2rem;
+}
+
+h1 {
+    font-family: "Young serif";
+    font-weight: 400;
+    font-size: 2.3rem;
+    line-height: 1;
+    color: var(--dark-charcoal);
+    margin-bottom: 0.75em;
+}
+
+.summary-container p{
+    font-family: "Outfit";
+    color: var(--nutmeg);
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+.summary-info-container {
+    background-color: var(--rose-white);
+    padding: 1.5em;
+    border-radius: 10px;
+    font-family: "Outfit";
+    margin-bottom: 1em;
+}
+
+.preparation {
+    color: var(--dark-raspbery);
+    font-weight: var(--semi-bold);
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+.summary-info-container ul{
+    padding: 0 2em;
+    margin-top: 0.5em;
+}
+
+.summary-info-container ul li{
+    padding: 0.3rem 0;
+    vertical-align: center;
+    color: var(--nutmeg);
+
+}
+
+.info {
+    font-weight: var(--bold);
+    font-family: "Outfit";
+}
+
+h2 {
+    font-family: "Young serif";
+    font-weight: var(--regular);
+    padding: .75em 0;
+}
+
+.container {
+    color: var(--nutmeg);
+    padding-bottom: 1.2em;
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.container ol li, .container ul li {
+    margin-left: 1.2em;
+    padding: 0.3em 0.5em;
+    font-family: "Outfit";
+    line-height: 1.5;
+}
+
+.container:last-child {
+    border: none;
+}
+
+.container:last-child p, .table-container {
+    font-family: "Outfit";
+}
+
+.container:last-child .nutri-info {
+    margin-bottom: 1.2em;
+}
+
+.row {
+    display: flex;
+    border-bottom: 1px solid var(--light-grey);
+    padding: 1em 1.5em;
+    justify-content: space-between;
+    flex-direction: initial;
+    text-align: center;
+}
+
+.container:last-child .row:last-child {
+    border: none;
+}
+
+@media (min-width: 700px) {
+    
+    .main-container {
+        padding: 2em;
+        margin: 4em auto;
+        border-radius: 10px;
+    }
+
+    img {
+        border-radius: 10px;
+    }
+
+    .information-container {
+        padding: 2rem 0;
+    }
+    
+}
