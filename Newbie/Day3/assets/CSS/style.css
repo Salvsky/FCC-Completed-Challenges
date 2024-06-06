@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(275, 100%, 97%);
+    --grayish-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+
+    --regular: 400;
+    --semi-bold: 600;
+    --bold: 700;
+}
+
+body {
+    background-color: var(--light-pink);
+    margin: 1em;
+}
+
+.background-container {
+    background-image: url("../images/background-pattern-mobile.svg");
+    height: 35vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    object-fit: contain;
+}
+
+.container {
+    background-color: var(--white);
+    margin: 10em auto;
+    padding: 1.5em;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.header {
+    display: flex;
+    gap: 1.3rem;
+    color: var(--dark-purple);
+}
+
+.header img {
+    width: 1.5rem;
+}
+
+.flex-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 1em 0.5em;
+    align-items: center;
+    border-top: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.no-border {
+    border: none;
+}
+
+.question {
+    font-weight: var(--semi-bold);
+    color: var(--dark-purple);
+}
+
+.info {
+    margin-bottom: 1em;
+    color: var(--grayish-purple);
+    padding: 0.5em 0.5em;
+}
+
+.active {
+    cursor: pointer;
+}
+
+.active:hover, .active:focus {
+    color: rgb(218, 11, 218);
+}
+
+@media (min-width: 600px) {
+    .background-container {
+        background-image: url("../images/background-pattern-desktop.svg");
+    }
+}
